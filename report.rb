@@ -82,7 +82,7 @@ class MonthlyChart
 
       if @combined
         print "#{day} #{Utils::BLUE}" + "+" * mn
-        print "#{Utils::RESET}#{Utils::RED}" + "+" * (mx)
+        print "#{Utils::RESET}#{Utils::RED}" + "+" * mx
         puts "#{Utils::RESET} #{mn}C - #{mx}C"
       else
         puts "#{day} #{Utils::RED}#{'+' * mx}#{Utils::RESET} #{mx}C"
