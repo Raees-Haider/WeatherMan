@@ -63,7 +63,7 @@ class MonthlyChart
     if @rows.empty?
       puts "No data for #{month_name(@year, @month)} #{@year}"
       return
-    end
+    end  
 
     puts "\n #{month_name(@year, @month)} #{@year}"
 
@@ -82,7 +82,7 @@ class MonthlyChart
 
       if @combined
         print "#{day} #{Utils::BLUE}" + "+" * mn
-        print "#{Utils::RESET}#{Utils::RED}" + "+" * (mx - mn)
+        print "#{Utils::RESET}#{Utils::RED}" + "+" * (mx)
         puts "#{Utils::RESET} #{mn}C - #{mx}C"
       else
         puts "#{day} #{Utils::RED}#{'+' * mx}#{Utils::RESET} #{mx}C"
