@@ -21,3 +21,32 @@ Draws bar charts for each day:
 - Red bars = Max temperature  
 - Blue bars = Min temperature  
 Supports combined mode using `-b`.
+
+### ruby weatherman.rb -a 2005/6 Lahore_weather 
+Highest Average: 42C  
+Lowest Average : 27C  
+Average Humidity: 58%  
+
+### ruby weatherman.rb -e 2005 Lahore_weather  
+Highest: 60C on June 1  
+Lowest : 0C on December 14  
+Humid  : 100% on August 11  
+
+
+### ruby weatherman.rb -c 2005/6 Lahore_weather
+
+ June 2005  
+ 01 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 60C  
+ 01 ++++++++++++++++++++++++ 24C  
+ 02 ++++++++++++++++++++++++++++++++++++++++++ 42C  
+ 02 ++++++++++ 10C  
+ 03 +++++++++++++++++++++++++++++++++++++++++++ 43C  
+ 03 +++++++++++++++++++++++++ 25C  
+
+
+### ruby weatherman.rb -c 2005/6 -b Lahore_weather
+
+ June 2005  
+ 01 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 24C - 60C   
+ 02 ++++++++++++++++++++++++++++++++++++++++++++++++++++ 10C - 42C   
+ 03 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 25C - 43C  
